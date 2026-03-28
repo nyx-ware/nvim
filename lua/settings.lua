@@ -25,13 +25,15 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "no"
 
 vim.o.clipboard = "unnamedplus"
 
 vim.diagnostic.config({
     virtual_text = true
 })
+
+vim.opt.fillchars = { eob = " " }
 
 vim.cmd("autocmd BufNewFile,BufRead * setlocal formatoptions-=cro")
 vim.cmd("set whichwrap+=<,>,[,]")

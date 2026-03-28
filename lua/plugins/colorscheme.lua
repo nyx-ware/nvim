@@ -1,6 +1,9 @@
 return {
-    "rebelot/kanagawa.nvim",
+    "zenbones-theme/zenbones.nvim",
+    dependencies = {
+        "rktjmp/lush.nvim"
+    },
     config = function()
-        vim.cmd("colorscheme kanagawa-wave")
+        vim.cmd("colorscheme zenburned")
     end
 }
