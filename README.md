@@ -2,4 +2,4 @@
 
 ## Overview
 
-This repository contains my person Neovim configuration.
+This repository contains my personal neovim configuration.
