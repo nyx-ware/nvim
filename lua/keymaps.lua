@@ -19,7 +19,7 @@ vim.keymap.set("n", "<leader>sh", ":split<CR>", opts)
 vim.keymap.set("n", "<leader>q", ":q<CR>", opts)
 
 -- nvim tree
-vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", opts)
+vim.keymap.set("n", "<leader>tr", ":NvimTreeToggle<CR>", opts)
 
 -- move
 vim.keymap.set("n", "<A-Down>", ":MoveLine(1)<CR>", opts)
@@ -37,4 +37,5 @@ vim.keymap.set("n", "<leader>g", ":Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>e", ":Telescope diagnostics<CR>", opts)
 
 -- terminal
+vim.keymap.set("n", "<leader>c", ":terminal<CR>", opts)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", opts)
