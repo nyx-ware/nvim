@@ -19,7 +19,7 @@ vim.keymap.set("n", "<leader>sh", ":split<CR>", opts)
 vim.keymap.set("n", "<leader>q", ":q<CR>", opts)
 
 -- nvim tree
-vim.keymap.set("n", "<leader>tr", ":NvimTreeToggle<CR>", opts)
+vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", opts)
 
 -- move
 vim.keymap.set("n", "<A-Down>", ":MoveLine(1)<CR>", opts)
