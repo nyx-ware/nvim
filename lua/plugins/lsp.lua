@@ -1,8 +1,8 @@
 return {
     "mason-org/mason-lspconfig.nvim",
     dependencies = {
-        "neovim/nvim-lspconfig",
         "mason-org/mason.nvim",
+        "neovim/nvim-lspconfig",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
@@ -13,7 +13,9 @@ return {
     },
     config = function()
         require("mason").setup()
-        require("mason-lspconfig").setup()
+        require("mason-lspconfig").setup({
+            ensure_installed = { "jdtls", "clangd" }
+        })
 
         local cmp = require("cmp")
         cmp.setup({

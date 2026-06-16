@@ -1,9 +1,12 @@
 return {
-    "zenbones-theme/zenbones.nvim",
+    "morhetz/gruvbox",
     dependencies = {
+        "rebelot/kanagawa.nvim",
+        "projekt0n/github-nvim-theme",
+        "zenbones-theme/zenbones.nvim",
         "rktjmp/lush.nvim"
     },
     config = function()
-        vim.cmd("colorscheme zenburned")
+        vim.cmd("colorscheme kanagawa")
     end
 }
