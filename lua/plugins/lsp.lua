@@ -15,9 +15,6 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = { "clangd" },
-            automatic_enable = {
-                exclude = { "jdtls" }
-            }
         })
 
         local cmp = require("cmp")
